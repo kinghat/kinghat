@@ -19,7 +19,13 @@
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "extensions": ["justjavac.vscode-deno-extensionpack"]
+      "extensions": [
+        "github.vscode-github-actions",
+        "GitHub.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "denoland.vscode-deno",
+        "laurencebahiirwa.deno-std-lib-snippets"
+      ]
     }
   }
 
