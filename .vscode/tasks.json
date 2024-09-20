@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "deno",
+			"command": "task",
+			"args": [
+				"build"
+			],
+			"problemMatcher": [
+				"$deno"
+			],
+			"label": "deno: build",
+			"detail": "$ deno task lume"
+		},
+		{
+			"type": "deno",
+			"command": "task",
+			"args": [
+				"serve"
+			],
+			"problemMatcher": [
+				"$deno"
+			],
+			"label": "deno: serve",
+			"detail": "$ deno task lume -s"
+		},
+		{
+			"type": "deno",
+			"command": "task",
+			"args": [
+				"cms"
+			],
+			"problemMatcher": [
+				"$deno"
+			],
+			"label": "deno: cms",
+			"detail": "$ deno task lume cms"
+		}
+	]
+}
