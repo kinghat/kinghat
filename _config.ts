@@ -3,6 +3,8 @@ import blog from "blog/mod.ts";
 
 const site = lume();
 
-site.use(blog());
+site
+  .ignore("README.md")
+  .use(blog());
 
 export default site;
