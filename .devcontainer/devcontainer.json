@@ -26,7 +26,9 @@
         "GitHub.vscode-pull-request-github",
         "eamodio.gitlens",
         "denoland.vscode-deno",
-        "laurencebahiirwa.deno-std-lib-snippets"
+        "laurencebahiirwa.deno-std-lib-snippets",
+        "vivaxy.vscode-conventional-commits",
+        "pshaddel.conventional-branch"
       ]
     }
   }
