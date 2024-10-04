@@ -16,7 +16,9 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  // "postCreateCommand": "yarn install",
+  // running git config commands in the postCreateCommand hook apparently overwrites the
+  // credentials that are copied over from host to guest.
+  "postStartCommand": "chmod +x .devcontainer/git_setup.sh && .devcontainer/git_setup.sh",
 
   // Configure tool-specific properties.
   "customizations": {
@@ -28,11 +30,9 @@
         "denoland.vscode-deno",
         "laurencebahiirwa.deno-std-lib-snippets",
         "vivaxy.vscode-conventional-commits",
-        "pshaddel.conventional-branch"
+        "pshaddel.conventional-branch",
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   }
-
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
 }
